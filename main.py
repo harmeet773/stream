@@ -36,7 +36,9 @@ with body:
     
     st.file_uploader("Upload file here"  , type=None, accept_multiple_files=False, key=None, help=None,
      on_change=None, args=None, kwargs=None)
-    st.write(' Sentiment analysis report  : ' + str())
+
+     a = st.text_input( ' type here to see below ')
+    st.write(' Sentiment analysis report   : ' + str(a)  )
 
 
 
