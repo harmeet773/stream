@@ -46,8 +46,8 @@ with body:
 
 
 
-    startst = st.date_input("start date", value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
-    end_date = st.date_input("end date", value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
+    startst = st.date_input("start date", value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None,  disabled=False)
+    end_date = st.date_input("end date", value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None,  disabled=False)
     start = st.text_input( 'start date ')
     end = st.text_input( 'end date ')
     type = st.text_input( 'type RUN ')
