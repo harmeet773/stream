@@ -2,6 +2,7 @@
 import pandas as pd
 import streamlit as st
 import os
+from src.main import main
 
 # import plotly.express as px    
 
@@ -42,8 +43,15 @@ with body:
         
         st.success("File saved")
     current_path = os.getcwd()
-    startst.date_input(label, value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
-    st.date_input(label, value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
+
+    start = st.text_input( 'start date ')
+    end = st.text_input( 'end date ')
+    type = st.text_input( 'end date ')
+    if type =="RUN":
+        main (start,end)
+        
+    # startst = st.date_input(label, value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
+    # end_date = st.date_input(label, value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
     dir = os.listdir(path = os.path.join(current_path,"uploaded_files"))
     st.write(dir,current_path)
 
