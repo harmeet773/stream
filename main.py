@@ -52,8 +52,8 @@ with body:
     # ttype = st.text_input( 'type RUN ')
     startd = startst.strftime('%d-%m-%Y')
     endd = end_date.strftime('%d-%m-%Y')
-    ttype = st.button("RUN", key, help, on_click, args, kwargs)
-    if ttype ==True:
+    
+    if st.button("RUN"):
         printff =main(startd,endd)
         aa = type(startd)
         st.write(printff,"check",startd,aa)
