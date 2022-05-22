@@ -59,7 +59,7 @@ with body:
         st.write(printff,"check",startd,aa)
 
     
-    dir = os.listdir(path = os.path.join(current_path,"Chatistics"))
+    dir = os.listdir(path = os.path.join(current_path,"Chatistics","raw_data"))
     st.write(dir,current_path)
 
     a = st.text_input( ' type here to see below ')
