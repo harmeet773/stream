@@ -44,15 +44,18 @@ with body:
         st.success("File saved")
     current_path = os.getcwd()
 
+
+
+    startst = st.date_input("start date", value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
+    end_date = st.date_input("end date", value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
     start = st.text_input( 'start date ')
     end = st.text_input( 'end date ')
     type = st.text_input( 'type RUN ')
     if type =="RUN":
-        printff =main (start,end)
-        st.write(printff,"check")
+        printff =main(start,end)
+        st.write(printff,"check",startst,type(startst))
 
-    # startst = st.date_input(label, value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
-    # end_date = st.date_input(label, value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
+    
     dir = os.listdir(path = os.path.join(current_path,"uploaded_files"))
     st.write(dir,current_path)
 
