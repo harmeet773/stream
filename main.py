@@ -38,7 +38,7 @@ with body:
     file_a = st.file_uploader("Upload file here"  , type=None, accept_multiple_files=False, key=None, help=None,
      on_change=None, args=None, kwargs=None)
     if file_a is not None :
-        with open(os.path.join("uploaded_files",file_a.name),"wb") as f:
+        with open(os.path.join("Chatistics","raw_data","whatsapp",file_a.name),"wb") as f:
             f.write(file_a.getbuffer()) 
         
         st.success("File saved")
@@ -59,7 +59,7 @@ with body:
         st.write(printff,"check",startd,aa)
 
     
-    dir = os.listdir(path = os.path.join(current_path,"Chatistics","raw_data"))
+    dir = os.listdir(path = os.path.join(current_path,"Chatistics","raw_data","whatsapp"))
     st.write(dir,current_path)
 
     a = st.text_input( ' type here to see below ')
