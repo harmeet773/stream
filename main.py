@@ -48,8 +48,8 @@ with body:
     end = st.text_input( 'end date ')
     type = st.text_input( 'type RUN ')
     if type =="RUN":
-        print =main (start,end)
-        st.write(print)
+        printff =main (start,end)
+        st.write(printff,"check")
 
     # startst = st.date_input(label, value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
     # end_date = st.date_input(label, value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
