@@ -1,7 +1,7 @@
 
 import pandas as pd
 import streamlit as st
-
+import os
 
 # import plotly.express as px    
 
@@ -34,8 +34,13 @@ st.markdown("<hr>", unsafe_allow_html=True)
 
 with body:
     
-    st.file_uploader("Upload file here"  , type=None, accept_multiple_files=False, key=None, help=None,
+    file_a = st.file_uploader("Upload file here"  , type=None, accept_multiple_files=False, key=None, help=None,
      on_change=None, args=None, kwargs=None)
+    if file_a is not None :
+        with open(os.path.join("uploaded_files",file_a.name),"wb") as f:
+            f.write(file_a.getbuffer()) 
+        
+        st.success("File saved")
 
     a = st.text_input( ' type here to see below ')
     st.write(' Sentiment analysis report   : ' + str(a)  )
