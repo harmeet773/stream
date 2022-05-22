@@ -49,10 +49,10 @@ with body:
     startst = st.date_input("start date", value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None,  disabled=False)
     end_date = st.date_input("end date", value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None,  disabled=False)
     
-    ttype = st.text_input( 'type RUN ')
+    # ttype = st.text_input( 'type RUN ')
     startd = startst.strftime('%d-%m-%Y')
     endd = end_date.strftime('%d-%m-%Y')
-    ttupe = st.button("RUN", key, help, on_click, args, kwargs)
+    ttype = st.button("RUN", key, help, on_click, args, kwargs)
     if ttype ==True:
         printff =main(startd,endd)
         aa = type(startd)
