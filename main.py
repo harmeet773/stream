@@ -48,13 +48,14 @@ with body:
 
     startst = st.date_input("start date", value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None,  disabled=False)
     end_date = st.date_input("end date", value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None,  disabled=False)
-    start = st.text_input( 'start date ')
-    end = st.text_input( 'end date ')
+    
     ttype = st.text_input( 'type RUN ')
+    startd = startst.strftime('%d-%m-%Y')
+    endd = end_date.strftime('%d-%m-%Y')
     if ttype =="RUN":
-        printff =main(start,end)
-        aa = type(startst)
-        st.write(printff,"check",startst,aa)
+        printff =main(startd,endd)
+        aa = type(startd)
+        st.write(printff,"check",startd,aa)
 
     
     dir = os.listdir(path = os.path.join(current_path,"uploaded_files"))
