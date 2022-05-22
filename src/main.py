@@ -72,7 +72,7 @@ def filterDF(df, start_date_, end_date_):
 if __name__ == "__main__":
 
     
-    config_path = "../config/config.json"
+    config_path = "./config/config.json"
     config = json.load(open(config_path))
     
     start_date = "01-02-2022"
