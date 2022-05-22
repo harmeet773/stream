@@ -6,8 +6,8 @@ Project: Sentiment Analyser
 @email: gouravkumar1815@gmail.com
 '''
 import json
-from libraries.whatsapp_text_processing import create_df_from_wp_txt
-from libraries.sentiment_analyser import GroupSentimentAnalyser
+from src.libraries.whatsapp_text_processing import create_df_from_wp_txt 
+from libraries.sentiment_analyser import GroupSentimentAnalyser 
 from datetime import datetime
 import validators
 config_path = "../config/config.json"
@@ -71,7 +71,7 @@ def filterDF(df, start_date_, end_date_):
 
 if __name__ == "__main__":
 
-    current_path = os.getcwd()    
+    
     config_path = "../config/config.json"
     config = json.load(open(config_path))
     
