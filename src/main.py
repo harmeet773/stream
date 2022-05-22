@@ -7,7 +7,7 @@ Project: Sentiment Analyser
 '''
 import json
 from src.libraries.whatsapp_text_processing import create_df_from_wp_txt 
-from libraries.sentiment_analyser import GroupSentimentAnalyser 
+from src.libraries.sentiment_analyser import GroupSentimentAnalyser 
 from datetime import datetime
 import validators
 config_path = "../config/config.json"
