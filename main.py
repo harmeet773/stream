@@ -42,14 +42,15 @@ with body:
         
         st.success("File saved")
     current_path = os.getcwd()
-
+    startst.date_input(label, value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
+    st.date_input(label, value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
     dir = os.listdir(path = os.path.join(current_path,"uploaded_files"))
-    st.write(dir)
+    st.write(dir,current_path)
 
     a = st.text_input( ' type here to see below ')
     st.write(' Sentiment analysis report   : ' + str(a)  )
 
-
+ 
 
 # st.date_input(label, value=None, min_value=None, max_value=None, key=None, help=None, on_change=None, args=None, kwargs=None, *, disabled=False)
 

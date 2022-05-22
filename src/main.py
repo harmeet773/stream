@@ -10,9 +10,11 @@ from libraries.whatsapp_text_processing import create_df_from_wp_txt
 from libraries.sentiment_analyser import GroupSentimentAnalyser
 from datetime import datetime
 import validators
+config_path = "../config/config.json"
+config = json.load(open(config_path))
 
 
-def main(config, start_date, end_date):
+def main(start_date, end_date):
     """
     Group Sentiment Analyser works in 2 phases with the help of respective pipelines :
         1. Whatsapp text processing
@@ -69,10 +71,11 @@ def filterDF(df, start_date_, end_date_):
 
 if __name__ == "__main__":
 
-    config_path = "/media/gourav/LEARN/1_Code/1_Projects/SentimentAnalyser/config/config.json"
+    current_path = os.getcwd()    
+    config_path = "../config/config.json"
     config = json.load(open(config_path))
     
     start_date = "01-02-2022"
     end_date = "27-02-2022"
     
-    main(config, start_date , end_date)
+    main( start_date , end_date)
