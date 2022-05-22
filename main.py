@@ -41,6 +41,10 @@ with body:
             f.write(file_a.getbuffer()) 
         
         st.success("File saved")
+    current_path = os.getcwd()
+
+    dir = os.listdir(path = os.path.join(current_path,"uploaded_files"))
+    st.write(dir,current_path)
 
     a = st.text_input( ' type here to see below ')
     st.write(' Sentiment analysis report   : ' + str(a)  )
