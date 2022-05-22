@@ -53,7 +53,8 @@ with body:
     type = st.text_input( 'type RUN ')
     if type =="RUN":
         printff =main(start,end)
-        st.write(printff,"check",startst,type(startst))
+        aa = type(startst)
+        st.write(printff,"check",startst,aa)
 
     
     dir = os.listdir(path = os.path.join(current_path,"uploaded_files"))
