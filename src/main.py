@@ -24,7 +24,7 @@ def main(start_date, end_date):
 
     # return("Hello the current path is:", str(os.getcwd()))
 
-    os.system('pip install -r requirements.txt')
+    # os.system('pip install -r requirements.txt')
 
     try:
         # The first module - To transform whatsapp group chat into pandas DataFrames
