@@ -94,43 +94,43 @@ pyrsistent==0.18.0
 python-dateutil==2.8.2
 pytz==2020.1
 pytz-deprecation-shim==0.1.0.post0
-# pywin32==301
-# pywinpty==1.1.6
-# pyzmq==22.1.0
-# requests==2.24.0
-# retrying==1.3.3
-# s3transfer==0.5.0
-# selenium==3.141.0
-# Send2Trash==1.8.0
-# six==1.16.0
-# smmap==5.0.0
-# soupsieve==2.0.1
-# sqlparse==0.3.1
-# streamlit==1.3.0
-# tablib==2.0.0
-# telepath==0.2
-# terminado==0.12.1
-# testpath==0.5.0
-# toml==0.10.2
-# toolz==0.11.2
-# tornado==6.1
-# traitlets==5.0.5
-# typing-extensions==3.10.0.0
-# tzdata==2021.5
-# tzlocal==4.1
-# Unidecode==1.1.1
-# urllib3==1.25.10
-# validators==0.18.2
-# virtualenv==20.4.7
-# virtualenv-clone==0.5.4
-# wagtail==2.15.1
-# watchdog==2.1.6
-# wcwidth==0.2.5
-# webdriver-manager==3.4.2
-# webencodings==0.5.1
-# widgetsnbextension==3.5.2
-# Willow==1.4
-# xlrd==1.2.0
-# XlsxWriter==1.3.3
-# xlwt==1.3.0
-# zipp==3.5.0
+pywin32
+pywinpty==1.1.6
+pyzmq==22.1.0
+requests==2.24.0
+retrying==1.3.3
+s3transfer==0.5.0
+selenium==3.141.0
+Send2Trash==1.8.0
+six==1.16.0
+smmap==5.0.0
+soupsieve==2.0.1
+sqlparse==0.3.1
+streamlit==1.3.0
+tablib==2.0.0
+telepath==0.2
+terminado==0.12.1
+testpath==0.5.0
+toml==0.10.2
+toolz==0.11.2
+tornado==6.1
+traitlets==5.0.5
+typing-extensions==3.10.0.0
+tzdata==2021.5
+tzlocal==4.1
+Unidecode==1.1.1
+urllib3==1.25.10
+validators==0.18.2
+virtualenv==20.4.7
+virtualenv-clone==0.5.4
+wagtail==2.15.1
+watchdog==2.1.6
+wcwidth==0.2.5
+webdriver-manager==3.4.2
+webencodings==0.5.1
+widgetsnbextension==3.5.2
+Willow==1.4
+xlrd==1.2.0
+XlsxWriter==1.3.3
+xlwt==1.3.0
+zipp==3.5.0
