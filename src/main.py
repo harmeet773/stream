@@ -44,8 +44,10 @@ def main(start_date, end_date):
 def filterDF(df, start_date_, end_date_):
     filtered_df = df
 
-    _start_date = datetime.strptime(start_date_, "%d-%m-%Y")
-    _end_date = datetime.strptime(end_date_, "%d-%m-%Y")
+
+    if not isinstance(start_date_, datetime):
+        _start_date = datetime.strptime(start_date_, "%d-%m-%Y")
+        _end_date = datetime.strptime(end_date_, "%d-%m-%Y")
 
     start_date_sec = (_start_date-datetime(1970,1,1)).total_seconds()
     end_date_sec = (_end_date-datetime(1970,1,1)).total_seconds()
