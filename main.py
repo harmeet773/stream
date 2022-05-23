@@ -35,7 +35,7 @@ st.markdown("<hr>", unsafe_allow_html=True)
 
 with body:
     
-    file_a = st.file_uploader("Upload file here"  , type=None, accept_multiple_files=False, key=None, help=None,
+    file_a = st.file_uploader("pls Upload file here"  , type=None, accept_multiple_files=False, key=None, help=None,
      on_change=None, args=None, kwargs=None)
     if file_a is not None :
         with open(os.path.join("Chatistics","raw_data","whatsapp",file_a.name),"wb") as f:
@@ -53,7 +53,7 @@ with body:
     startd = startst.strftime('%d-%m-%Y')
     endd = end_date.strftime('%d-%m-%Y')
     
-    if st.button("RUNNNN"):
+    if st.button("RUNNN IT"):
         printff =main(startd,endd)
         aa = type(startd)
         st.write(printff,"check",startd,aa)
