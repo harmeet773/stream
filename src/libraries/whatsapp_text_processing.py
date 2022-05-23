@@ -14,9 +14,11 @@ def create_df_from_wp_txt(config):
     EXPORT_FORMAT = config["export_format"]
     EXPORT_DIR_PATH = config["export_dir_path"]
 
-
-    # Change dir to chatistics for analysing chat and exporting csv
-    os.chdir(config["chat_dir_path"])
+    try :
+        # Change dir to chatistics for analysing chat and exporting csv
+        os.chdir(config["chat_dir_path"])
+    except :
+        return str(os.getcwd())
 
 
     os.system(f'python parse.py whatsapp --own-name {OWN_NAME} && \
