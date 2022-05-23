@@ -25,7 +25,10 @@ def main(start_date, end_date):
         # The first module - To transform whatsapp group chat into pandas DataFrames
         df = create_df_from_wp_txt(config)
 
+        if isinstance(df, str):
+            return df
 
+            
         # Filter the DF as per the date range and a
         filtered_df_txt = filterDF(df,start_date, end_date)
         # print("######filtered_df_txt##########", filtered_df_txt)   # Just to Debug
