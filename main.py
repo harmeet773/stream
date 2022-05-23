@@ -43,6 +43,7 @@ with body:
         
         st.success("File saved")
     current_path = os.getcwd()
+   
 
 
 
@@ -58,7 +59,8 @@ with body:
         aa = type(startd)
         st.write(printff,"check",startd,aa)
 
-    
+    current_pt = os.getcwd()    
+    st.write(current_pt)
     dir = os.listdir(path = os.path.join("Chatistics","raw_data","whatsapp"))
     st.write(dir,current_path)
 
