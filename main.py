@@ -61,8 +61,8 @@ with body:
 
     current_pt = os.getcwd()    
     st.write(current_pt)
-    dir = os.listdir(path = os.path.join("Chatistics","raw_data","whatsapp"))
-    st.write(dir,current_path)
+    # dir = os.listdir(path = os.path.join("Chatistics","raw_data","whatsapp"))
+    # st.write(dir,current_path)
 
     a = st.text_input( ' type here to see below ')
     st.write(' Sentiment analysis report   : ' + str(a)  )
