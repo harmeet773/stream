@@ -26,7 +26,12 @@ def create_df_from_wp_txt(config):
         # TODO: Implement subprocess to get exxported file name from the terminal output
 
     onlyfiles = [f for f in os.listdir(EXPORT_DIR_PATH) if os.path.isfile(os.path.join(EXPORT_DIR_PATH, f))]
-    parsed_file_path = os.path.join(EXPORT_DIR_PATH,onlyfiles[1])
+
+    try: 
+        parsed_file_path = os.path.join(EXPORT_DIR_PATH,onlyfiles[1])
+
+    except :
+        return 'CSV file not exists'
     print("######", parsed_file_path)
 
     df = pd.read_csv(parsed_file_path)

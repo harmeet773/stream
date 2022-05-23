@@ -29,7 +29,7 @@ def main(start_date, end_date):
         df = create_df_from_wp_txt(config)
 
         if isinstance(df, str):
-            return df
+            return "Error:::", df
 
             
         # Filter the DF as per the date range and a
