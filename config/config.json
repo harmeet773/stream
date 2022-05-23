@@ -1,6 +1,6 @@
 {
     
-    "chat_dir_path": "../Chatistics",
+    "chat_dir_path": "./Chatistics",
     "own_name": "Gourav",
     "export_format": "csv",
     "export_dir_path": "../Chatistics/exports"
