@@ -56,7 +56,7 @@ with body:
     if st.button("RUN"):
         printff =main(startd,endd)
         aa = type(startd)
-        st.write(printff,"check",startd,aa)
+        st.write(printff,"Heyyy",startd,aa)
 
     
     dir = os.listdir(path = os.path.join(current_path,"Chatistics","raw_data","whatsapp"))
