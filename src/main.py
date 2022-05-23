@@ -12,6 +12,7 @@ from datetime import datetime
 import validators
 config_path = "./config/config.json"
 config = json.load(open(config_path))
+import os
 
 
 def main(start_date, end_date):
@@ -20,6 +21,8 @@ def main(start_date, end_date):
         1. Whatsapp text processing
         2. Sentiment Analyser Model
     """
+
+    print("Hello the current path is:", str(os.getcwd()))
 
     try:
         # The first module - To transform whatsapp group chat into pandas DataFrames
