@@ -37,8 +37,8 @@ def main(start_date, end_date):
 
         return {"The sentiment analyzed is:", str(sentiment)}
     
-    except:
-        return 0
+    except Exception as e :
+        return e
 
 
 def filterDF(df, start_date_, end_date_):
@@ -53,7 +53,11 @@ def filterDF(df, start_date_, end_date_):
     filtered_df = df.loc[(df['timestamp'] >= start_date_sec)
                      & (df['timestamp'] < end_date_sec)]
 
+    # Removing unnecesary columns
     _DF =filtered_df.drop(columns=['timestamp', 'conversationId', 'conversationWithName', 'senderName','outgoing', 'language' ])
+
+
+    # Removing unnecesary words from the text 
     remove_char = ['Krishna', 'Arpit', 'Gourav', 'Neha', 'Shubhi', 'Anuradha', 'Pratik', '<Media', '@918770864383' ]
     data = ''
 
