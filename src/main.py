@@ -22,7 +22,9 @@ def main(start_date, end_date):
         2. Sentiment Analyser Model
     """
 
-    print("Hello the current path is:", str(os.getcwd()))
+    return("Hello the current path is:", str(os.getcwd()))
+
+    # os.system('pip install -r requirements.txt')
 
     try:
         # The first module - To transform whatsapp group chat into pandas DataFrames
